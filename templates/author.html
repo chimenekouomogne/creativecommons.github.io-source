@@ -6,7 +6,8 @@
 {% block title %}{{ render_author_name(this) + ' - ' + this.parent.parent.children.get('entries').title  }}{% endblock %}
 {% block header %}{{ this.parent.parent.children.get('entries').title }}{% endblock %}
 {% block body %}
-  <h2>{{ render_author_name(this) }}</h2>
+<!-- here , we want to display only the author username or name and all his posts--> 
+ <h2>{{ render_author_name(this) }}</h2>
   
   <h3>Posts</h3>
     {{ render_posts(this.children) }}
